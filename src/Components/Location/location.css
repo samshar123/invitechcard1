@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.location{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5ff;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.iframediv{
+    width: 100%;
+    border: none;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationimg{
+    width: 200px;
+    height: auto;
+}
+.iframediv p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #545454;
+    font-weight: 400;
+    font-size: 13px;
+}

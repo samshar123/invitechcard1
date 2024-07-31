@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  a{
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+.indexpage{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:#f9f5ff ;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 0;
+    scroll-behavior: smooth;
+  
+}
+
+.imgdiv{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url("../../public/Img/imgbody.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+
+}
+.namelgoimg{
+    width: 80PX;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid #545454;
+}
+.datesub{
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    top: 24.5%;
+    transform: translate(-50%, -50%);
+}
+.prayer1{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+.prayer1{
+    font-family:'Times New Roman', Times, serif;
+    color: #545454;
+    font-weight: 100;
+}
+.wishesfirst{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+
+}
+
+.groombride{
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    font-family: cursive;
+    color: #545454;
+    font-size: 2.3rem;
+}
+.sonof{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-top: 0px;
+    line-height: 0px;
+    position: absolute;
+    left: 50%;
+    top: 56.5%;
+    transform: translate(-50%, -50%);
+}
+.datediv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 66%;
+    transform: translate(-50%, -50%);
+}
+.dateday{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #545454;
+}
+.datenum{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #545454;
+}
+.datearabic{
+    margin-top: 3px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #545454;
+}
+.wedfooter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+}
+.wedfooter h6{
+    font-size: 1rem;
+    color: #545454;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.wedfooter h4{
+    font-size: .8rem;
+    font-weight: 400;
+    color: #545454;
+}
+.wedfooter h5{
+    margin-top: 5px;
+    font-size: .6rem;
+    font-weight: 400;
+    color: #545454;
+}
+.arrowdown{
+    color: #545454 ;
+    margin-top: 5px;
+    animation: mover 1s infinite  alternate;
+    font-size: 1.5rem;
+    -webkit-tap-highlight-color: transparent;
+    
+
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+@media (min-width:760px) {
+    .imgdiv{
+        background-size: contain;
+    }
+    
+}
