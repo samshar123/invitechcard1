@@ -171,3 +171,15 @@
     }
     
 }
+
+
+/* typing animation */
+.typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  
+  
+ 
