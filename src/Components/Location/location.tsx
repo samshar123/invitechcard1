@@ -1,5 +1,5 @@
 import "./location.css"
-import loc from "../../../public/Img/locimage.png"
+import loc from "../../../public/Img/locimage2.png"
 const location = () => {
   return (
     <div data-aos="fade-up" className="location" id="location">
