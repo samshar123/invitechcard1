@@ -3,7 +3,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 import Index from "../src/Components/index"
 import Location from "../src/Components/Location/location"
 import Footer from "../src/Components/Footer/footer"
-// import Loader from "../src/Components/Loader/loader"
+import Loader from "../src/Components/Loader/loader"
 <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> 
 import './App.css'
 import AOS from 'aos';
@@ -13,24 +13,15 @@ import 'aos/dist/aos.css';
 AOS.init();
 function App() {
 
-  // const [screenLoading, setScreenLoading] = useState(false);
+  const [screenLoading, setScreenLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setScreenLoading(true);
-  //   setTimeout(() => {
-  //     setScreenLoading(false);
-  //   }, 5000);
-  // }, []);
+  useEffect(() => {
+    setScreenLoading(true);
+    setTimeout(() => {
+      setScreenLoading(false);
+    }, 5000);
+  }, []);
  
-
-
-  window.addEventListener("load", function() {
-    const loader = document.getElementById("preloader");
-    if (loader) {
-      loader.style.display = "none";
-    }
-  });
-  
   
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -64,17 +55,13 @@ function App() {
   return (
     <>
       <div className="app">
-      <div id="preloader"></div>
      
         
-      {/* {screenLoading ? (
+      {screenLoading ? (
         <Loader />
-      ) : ( <div> */}
-          
-        <Index></Index>
+      ) : ( <div><Index></Index>
         <Location></Location>
-        <Footer></Footer>
-        {/* </div> )} */}
+        <Footer></Footer></div> )}
        
       
         <script src="bower_components/aos/dist/aos.js"></script>
