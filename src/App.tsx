@@ -59,9 +59,12 @@ function App() {
         
       {screenLoading ? (
         <Loader />
-      ) : ( <div><Index></Index>
+      ) : ( <div>
+          
+        <Index></Index>
         <Location></Location>
-        <Footer></Footer></div> )}
+        <Footer></Footer>
+        </div> )}
        
       
         <script src="bower_components/aos/dist/aos.js"></script>
