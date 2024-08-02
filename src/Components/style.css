@@ -183,3 +183,24 @@
   
   
  
+  @media (max-height:720px) {
+    
+    .sonof{
+        margin-top: 15px;
+    }
+  }
+  @media (max-height:700px) {
+    .datesub{
+        margin-top: 5px;
+    }
+    .wedfooter h6{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+  }
+  @media (max-height:700px){
+    .wedfooter h6{
+        margin-top: 20px;
+    }
+  }
