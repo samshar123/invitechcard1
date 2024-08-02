@@ -45,8 +45,8 @@ function App() {
     return(
      <div className="largescreenmesage">
       <BsEmojiSmile className="messageicon" />
-      <h1>Sorry friend, <br /> this is a mobile phone only Optimaized App</h1> 
-      <h4>Kindly use your mobile phone for access your Invitech card</h4>
+      <h1>Sorry friend, <br /> This is a mobile phone-only optimized app.</h1> 
+      <h4>Kindly use your mobile phone to access your Invitech card.</h4>
      </div>
     )
     
