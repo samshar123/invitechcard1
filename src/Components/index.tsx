@@ -4,6 +4,23 @@ import imgtop from "../../public/Img/namelogo.png"
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const index = () => {
+  function addToCalendar() {
+    var event = {
+        title: 'Haneersha & Sidhrathul munthaha\'s Wedding',
+        location: 'Green Palace Auditorium, Manoor Pookkunnu, Othukkungal',
+        startTime: new Date('2024-08-11T11:30:00'),
+        endTime: new Date('2024-08-11T14:00:00')
+    };
+
+    var calendarUrl = 'https://www.google.com/calendar/render?action=TEMPLATE&text=' +
+        encodeURIComponent(event.title) +
+        '&dates=' + event.startTime.toISOString().replace(/-|:|\.\d+/g, '') +
+        '/' + event.endTime.toISOString().replace(/-|:|\.\d+/g, '') +
+        '&location=' + encodeURIComponent(event.location) +
+        '&pli=1&uid=&sf=true&output=xml';
+
+    window.open(calendarUrl, '_blank');
+}
  
   
 
@@ -21,7 +38,7 @@ const index = () => {
             <h5 className="wishesfirst">We, Mr. Muhammed Ilyas & Mrs. Shareena K.K, joyfully invite you to join us the nikkah of our daughter.</h5>
             <h1 className="groombride">Aysha Diya <br /> & <br />Athil Rahman</h1>
             <h5 className="sonof">(S/o Mr. Noushad T.P & Mrs. Shahina) </h5>
-            <div className="datediv">
+            <div onClick={()=>addToCalendar} className="datediv">
                 <div className="dateday">SATURDAY</div>
                 <div className="datenum">AUG | 17 | 2024</div>
                 <div className="datearabic">SAFAR 12</div>
