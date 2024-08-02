@@ -1,6 +1,7 @@
 {
   "name": "invitechcard1",
   "private": false,
+  "homepage":"./",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,7 +9,6 @@
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "homepage": "https://samshar123.github.io/invitechcard1/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
