@@ -31,11 +31,12 @@
     border-radius: 10px;
     border: 1px solid grey;
     padding: 0 15px;
-    color: white;
+    color: #a492c4;
 
 }
 input::placeholder{
     font-weight: 200;
+    color: #a492c4;
 }
 .messagesend h4{
     font-weight: 600;
