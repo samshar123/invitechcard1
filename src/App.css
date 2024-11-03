@@ -35,7 +35,9 @@
   opacity: .8;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 
 
@@ -47,6 +49,5 @@
   position: fixed;
   z-index:9999;
   background-size: cover;
-
-
+  
 } */

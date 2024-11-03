@@ -2,6 +2,9 @@ import { useState,useEffect } from "react"
 import { BsEmojiSmile } from "react-icons/bs";
 import Index from "../src/Components/index"
 import Location from "../src/Components/Location/location"
+import Video from "./Components/Video/video";
+import Images from "./Components/Images/images";
+import Message from "./Components/Message/message";
 import Footer from "../src/Components/Footer/footer"
 import Loader from "../src/Components/Loader/loader"
 <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> 
@@ -59,9 +62,14 @@ function App() {
         
       {screenLoading ? (
         <Loader />
-      ) : ( <div><Index></Index>
+      ) : ( <div>
+        <Index></Index>
+        <Video></Video>
+        <Images></Images>
         <Location></Location>
-        <Footer></Footer></div> )}
+        <Message></Message>
+        <Footer></Footer>
+        </div> )}
        
       
         <script src="bower_components/aos/dist/aos.js"></script>
